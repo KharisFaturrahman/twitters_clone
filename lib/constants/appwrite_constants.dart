@@ -1,5 +1,14 @@
 class AppwriteConstants {
-  static const String databaseId = '6455f11ee19a678e3b55';
-  static const String projectId = '6423b9ac728639035d7d';
+  static const String databaseId = '64a10ff36b0fc470c973';
+  static const String projectId = '6423ba26ef6c810b3753';
   static const String endPoint = 'https://baas.pasarjepara.com/v1';
+
+  static const String usersCollection = '64a9834844efa436a7bc';
+  static const String tweetsCollection = '64a1100b2dbec625422d';
+  static const String notificationsCollection = '63cd5ff88b08e40a11bc';
+
+  static const String imagesBucket = '63cbdab48cdbccb6b34e';
+
+  static String imageUrl(String imageId) =>
+      '$endPoint/storage/buckets/$imagesBucket/files/$imageId/view?project=$projectId&mode=admin';
 }
